@@ -20,9 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={outfit.className}>
-        <NavBar />
-        {children}
-        <Footer />
+        <div className="flex flex-col h-screen">
+          <NavBar />
+          <div className="flex-grow">
+            {children}
+          </div>
+          <Footer />
+        </div>
       </body>
     </html>
   );

@@ -13,7 +13,7 @@ export default function NavBar() {
           <a href="/">About</a>
           <a href="/">Blog</a>
           <a href="https://github.com/alfieloakes" target="_blank" rel="noreferrer">Github</a>
-          <a href="/">X/Twitter</a>
+          <a href="https://twitter.com/alfieloakes" target="_blank" rel="noreferrer">X/Twitter</a>
         </div>
 
         <div className="md:hidden flex justify-end">
@@ -33,7 +33,7 @@ export default function NavBar() {
         <a className="grow rounded-md bg-slate-200 h-10 leading-10" href="/">About</a>
         <a className="grow rounded-md bg-slate-50 h-10 leading-10" href="/">Blog</a>
         <a className="grow rounded-md bg-slate-50 h-10 leading-10" href="https://github.com/alfieloakes" target="_blank" rel="noreferrer">Github</a>
-        <a className="grow rounded-md bg-slate-50 h-10 leading-10" href="/">X/Twitter</a>
+        <a className="grow rounded-md bg-slate-50 h-10 leading-10" href="https://twitter.com/alfieloakes" target="_blank" rel="noreferrer">X/Twitter</a>
       </div>
       )}
     </nav>

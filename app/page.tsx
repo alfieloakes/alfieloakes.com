@@ -1,5 +1,6 @@
 import React from 'react';
-import NavBar from './components/navbar';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

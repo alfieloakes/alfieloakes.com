@@ -7,10 +7,10 @@ export default function NavBar() {
   return (
     <nav className="container px-4">
       <div className="grid grid-cols-4 md:grid-cols-3 lg:grid-cols-12 gap-4 h-16">
-        <span className="col-span-3 md:col-span-2 lg:col-span-9 text-lg sm:text-2xl font-bold uppercase flex items-center">Alfie Loakes</span>
+        <a className="col-span-3 md:col-span-2 lg:col-span-9 text-lg sm:text-2xl font-bold uppercase flex items-center" href="/">Alfie Loakes</a>
 
         <div className="hidden md:flex md:col-span-1 lg:col-span-3 items-center place-content-between">
-          <a href="/">About</a>
+          <a href="/about">About</a>
           <a href="/">Blog</a>
           <a href="https://github.com/alfieloakes" target="_blank" rel="noreferrer">Github</a>
           <a href="https://twitter.com/alfieloakes" target="_blank" rel="noreferrer">X/Twitter</a>

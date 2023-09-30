@@ -5,15 +5,19 @@ import React, { useState } from 'react';
 export default function NavBar() {
   const [mobileNav, setMobileNav] = useState(false);
   return (
-    <nav className="container px-4">
-      <div className="grid grid-cols-4 md:grid-cols-3 lg:grid-cols-12 gap-4 h-16">
-        <a className="col-span-3 md:col-span-2 lg:col-span-9 text-lg sm:text-2xl font-bold uppercase flex items-center" href="/">Alfie Loakes</a>
+    <nav className="container px-4 mb-8">
+      <div className="grid grid-cols-4 md:grid-cols-12 gap-4 h-16">
+        <a className="col-span-3 md:col-span-7 text-lg sm:text-1xl font-bold flex items-center" href="/">Alfie Loakes</a>
 
-        <div className="hidden md:flex md:col-span-1 lg:col-span-3 items-center place-content-between">
-          <a href="/about">About</a>
+        <div className="hidden md:flex md:col-span-5 items-center place-content-between">
           <a href="/">Blog</a>
           <a href="https://github.com/alfieloakes" target="_blank" rel="noreferrer">Github</a>
-          <a href="https://twitter.com/alfieloakes" target="_blank" rel="noreferrer">X/Twitter</a>
+          <a href="https://twitter.com/alfieloakes" target="_blank" rel="noreferrer">
+            <s>Twitter</s>
+            {' '}
+            X
+          </a>
+          <a href="https://www.linkedin.com/in/alfieloakes/" target="_blank" rel="noreferrer">Linkedin</a>
         </div>
 
         <div className="md:hidden flex justify-end">
@@ -30,10 +34,14 @@ export default function NavBar() {
 
       {mobileNav && (
       <div className="md:hidden flex flex-col flex-stretch text-center content-center gap-y-1">
-        <a className="grow rounded-md bg-slate-200 h-10 leading-10" href="/">About</a>
-        <a className="grow rounded-md bg-slate-50 h-10 leading-10" href="/">Blog</a>
-        <a className="grow rounded-md bg-slate-50 h-10 leading-10" href="https://github.com/alfieloakes" target="_blank" rel="noreferrer">Github</a>
-        <a className="grow rounded-md bg-slate-50 h-10 leading-10" href="https://twitter.com/alfieloakes" target="_blank" rel="noreferrer">X/Twitter</a>
+        <a className="grow rounded-md bg-stone-800 h-10 leading-10" href="/">Blog</a>
+        <a className="grow rounded-md bg-stone-800 h-10 leading-10" href="https://github.com/alfieloakes" target="_blank" rel="noreferrer">Github</a>
+        <a className="grow rounded-md bg-stone-800 h-10 leading-10" href="https://twitter.com/alfieloakes" target="_blank" rel="noreferrer">
+          <s>Twitter</s>
+          {' '}
+          X
+        </a>
+        <a className="grow rounded-md bg-stone-800 h-10 leading-10" href="https://www.linkedin.com/in/alfieloakes/" target="_blank" rel="noreferrer">Linkedin</a>
       </div>
       )}
     </nav>

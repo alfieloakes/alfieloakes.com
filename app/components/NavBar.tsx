@@ -10,7 +10,7 @@ export default function NavBar() {
         <a className="col-span-3 md:col-span-7 text-lg sm:text-1xl font-bold flex items-center" href="/">Alfie Loakes</a>
 
         <div className="hidden md:flex md:col-span-5 items-center place-content-between">
-          <a href="/">Blog</a>
+          {/* <a href="/">Blog</a> */}
           <a href="https://github.com/alfieloakes" target="_blank" rel="noreferrer">Github</a>
           <a href="https://twitter.com/alfieloakes" target="_blank" rel="noreferrer">
             <s>Twitter</s>
@@ -34,7 +34,7 @@ export default function NavBar() {
 
       {mobileNav && (
       <div className="md:hidden flex flex-col flex-stretch text-center content-center gap-y-1">
-        <a className="grow rounded-md bg-stone-800 h-10 leading-10" href="/">Blog</a>
+        {/* <a className="grow rounded-md bg-stone-800 h-10 leading-10" href="/">Blog</a> */}
         <a className="grow rounded-md bg-stone-800 h-10 leading-10" href="https://github.com/alfieloakes" target="_blank" rel="noreferrer">Github</a>
         <a className="grow rounded-md bg-stone-800 h-10 leading-10" href="https://twitter.com/alfieloakes" target="_blank" rel="noreferrer">
           <s>Twitter</s>
